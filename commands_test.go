@@ -400,7 +400,7 @@ func TestRunDetach(t *testing.T) {
 	})
 
 	// wait for CmdRun to return
-	setTimeout(t, "Waiting for CmdRun timed out", 5*time.Second, func() {
+	setTimeout(t, "Waiting for CmdRun timed out", 15*time.Second, func() {
 		<-ch
 	})
 
